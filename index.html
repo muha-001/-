@@ -47,7 +47,6 @@
             background-attachment: fixed;
         }
 
-        /* ============ TOP BAR ============ */
         .top-bar {
             background: var(--primary);
             color: #fff;
@@ -62,7 +61,6 @@
             font-weight: 600;
         }
 
-        /* ============ HEADER / NAVBAR ============ */
         .header {
             background: var(--white);
             position: sticky;
@@ -172,7 +170,6 @@
             }
         }
 
-        /* ============ HERO ============ */
         .hero {
             background: linear-gradient(160deg, #0a1e3d 0%, #0f2b54 30%, #132f5e 60%, #0a1e3d 100%);
             color: #fff;
@@ -264,7 +261,6 @@
             font-weight: bold;
         }
 
-        /* ============ MAIN CONTAINER ============ */
         .main-container {
             max-width: 1300px;
             margin: 0 auto;
@@ -293,7 +289,6 @@
             border-radius: 2px;
         }
 
-        /* ============ FILTERS ============ */
         .filters-row {
             display: flex;
             gap: 10px;
@@ -322,7 +317,6 @@
             box-shadow: var(--shadow-sm);
         }
 
-        /* ============ PRODUCT GRID ============ */
         .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -342,7 +336,6 @@
             opacity: 0.5;
         }
 
-        /* ============ PRODUCT CARD ============ */
         .product-card {
             background: var(--card-bg);
             border-radius: var(--radius);
@@ -423,11 +416,17 @@
             font-size: 1.3rem;
             font-weight: 800;
             color: var(--primary);
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
         .product-card .card-price .currency {
             font-size: 0.8rem;
             color: var(--text-light);
+            font-weight: 500;
+        }
+        .product-card .usd-equivalent {
+            font-size: 0.75rem;
+            color: #666;
+            margin-bottom: 6px;
             font-weight: 500;
         }
         .product-card .installment-pills {
@@ -464,7 +463,6 @@
             box-shadow: 0 6px 20px rgba(160, 125, 46, 0.35);
         }
 
-        /* ============ MODALS ============ */
         .modal-overlay {
             position: fixed;
             inset: 0;
@@ -645,7 +643,6 @@
             box-shadow: 0 8px 25px rgba(10, 30, 61, 0.35);
         }
 
-        /* ============ ADMIN LOGIN MODAL ============ */
         .admin-login-modal {
             max-width: 420px;
             text-align: center;
@@ -694,7 +691,6 @@
             display: block;
         }
 
-        /* ============ ADMIN PANEL ============ */
         .admin-panel {
             position: fixed;
             inset: 0;
@@ -960,7 +956,6 @@
             color: #fff;
         }
 
-        /* ============ FOOTER ============ */
         .footer {
             background: var(--primary);
             color: #fff;
@@ -976,7 +971,6 @@
         .footer .footer-text strong {
             color: var(--gold-light);
         }
-        /* Secret admin smiley */
         .secret-smiley {
             display: inline-block;
             cursor: pointer;
@@ -992,7 +986,6 @@
             opacity: 0.9;
         }
 
-        /* ============ TOAST ============ */
         .toast {
             position: fixed;
             bottom: 30px;
@@ -1031,7 +1024,6 @@
             }
         }
 
-        /* ============ RESPONSIVE ============ */
         @media (max-width: 768px) {
             .header-inner {
                 flex-wrap: wrap;
@@ -1084,7 +1076,6 @@
             }
         }
 
-        /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 6px;
         }
@@ -1100,7 +1091,6 @@
             background: #a09580;
         }
 
-        /* WhatsApp float */
         .whatsapp-float {
             position: fixed;
             bottom: 25px;
@@ -1141,12 +1131,10 @@
 </head>
 <body>
 
-    <!-- TOP BAR -->
     <div class="top-bar">
         🏦 <span>مصرف الرافدين</span> — الشريك الرسمي والحصري لمنصة التقسيط | جميع المعاملات محمية وآمنة
     </div>
 
-    <!-- HEADER -->
     <header class="header" id="header">
         <div class="header-inner">
             <a href="#" class="logo-area" onclick="scrollToTop()">
@@ -1167,7 +1155,6 @@
         </div>
     </header>
 
-    <!-- HERO -->
     <section class="hero">
         <div class="hero-pattern"></div>
         <div class="hero-content">
@@ -1183,13 +1170,11 @@
         </div>
     </section>
 
-    <!-- MAIN CONTENT -->
     <div class="main-container" id="products">
         <h2 class="section-title">🛒 الأجهزة المتوفرة للتقسيط</h2>
         <p class="section-subtitle">اختر الجهاز الذي ترغب به واستعرض خيارات التقسيط المتاحة</p>
         <div class="section-title-bar"></div>
 
-        <!-- FILTERS -->
         <div class="filters-row">
             <button class="filter-btn active" data-filter="all">الكل</button>
             <button class="filter-btn" data-filter="3">تقسيط 3 أشهر</button>
@@ -1198,7 +1183,6 @@
             <button class="filter-btn" data-filter="12">تقسيط 12 شهر</button>
         </div>
 
-        <!-- PRODUCTS GRID -->
         <div class="products-grid" id="productsGrid">
             <div class="no-products">
                 <span class="icon">📦</span>
@@ -1207,7 +1191,6 @@
         </div>
     </div>
 
-    <!-- HOW IT WORKS -->
     <div class="main-container" id="how-it-works">
         <h2 class="section-title">❓ كيف يعمل التقسيط؟</h2>
         <div class="section-title-bar"></div>
@@ -1235,7 +1218,6 @@
         </div>
     </div>
 
-    <!-- CONTACT -->
     <div class="main-container" id="contact" style="text-align:center;">
         <h2 class="section-title">📞 تواصل معنا</h2>
         <div class="section-title-bar"></div>
@@ -1250,20 +1232,14 @@
         </div>
     </div>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <p class="footer-text">© 2026 <strong>منصة الرافدين للتقسيط</strong> — جميع الحقوق محفوظة | حصرياً لـ <strong>مصرف الرافدين</strong> العراق</p>
         <p style="font-size:0.75rem;opacity:0.5;margin-top:4px;">الأسعار بالدينار العراقي | IQD</p>
-        <!-- Secret admin access smiley -->
         <span class="secret-smiley" id="secretSmiley" title="🔐">🙂</span>
     </footer>
 
-    <!-- WhatsApp Float -->
     <a href="https://wa.me/9640000000000" target="_blank" rel="noopener" class="whatsapp-float" title="تواصل معنا عبر واتساب">💬</a>
 
-    <!-- ==================== MODALS ==================== -->
-
-    <!-- PRODUCT DETAIL MODAL -->
     <div class="modal-overlay" id="productModalOverlay">
         <div class="modal" id="productModal">
             <button class="modal-close" onclick="closeProductModal()">✕</button>
@@ -1271,7 +1247,6 @@
         </div>
     </div>
 
-    <!-- ADMIN LOGIN MODAL -->
     <div class="modal-overlay" id="adminLoginOverlay">
         <div class="modal admin-login-modal" id="adminLoginModal">
             <button class="modal-close" onclick="closeAdminLogin()">✕</button>
@@ -1285,13 +1260,23 @@
         </div>
     </div>
 
-    <!-- ADMIN PANEL (Full screen) -->
     <div class="admin-panel" id="adminPanel">
         <div class="admin-header">
-            <h2>🛠️ لوحة التحكم — إدارة المنتجات</h2>
+            <h2>🛠️ لوحة التحكم — إدارة المنصة</h2>
             <button class="btn-out" onclick="adminLogout()">🚪 تسجيل الخروج</button>
         </div>
         <div class="admin-content">
+            <!-- Exchange Rate -->
+            <div class="admin-section">
+                <h3>💱 سعر الصرف (لكل 100 دولار)</h3>
+                <div class="form-group">
+                    <label>سعر 100 دولار أمريكي بالدينار العراقي</label>
+                    <input type="number" id="exchangeRateInput" placeholder="مثال: 145000" min="1000" step="1000">
+                </div>
+                <button class="btn-save" onclick="saveExchangeRate()">💾 حفظ سعر الصرف</button>
+                <p style="margin-top:8px;font-size:0.8rem;color:#666;">يُستخدم لعرض السعر التقريبي بالدولار بجانب السعر بالدينار.</p>
+            </div>
+
             <!-- Add new product -->
             <div class="admin-section">
                 <h3>➕ إضافة منتج جديد</h3>
@@ -1345,15 +1330,15 @@
         </div>
     </div>
 
-    <!-- TOAST CONTAINER -->
     <div id="toastContainer"></div>
 
     <script>
         (function() {
-            // ==================== DATA STORAGE ====================
             const STORAGE_KEY = 'rafidain_products';
             const ADMIN_KEY = 'rafidain_admin_logged_in';
+            const EXCHANGE_RATE_KEY = 'rafidain_exchange_rate';
             const ADMIN_CODE = '14001400@AliQais';
+            const DEFAULT_EXCHANGE_RATE = 145000; // IQD per 100 USD
 
             function getProducts() {
                 try {
@@ -1374,11 +1359,19 @@
                 }
             }
 
+            function getExchangeRate() {
+                const saved = localStorage.getItem(EXCHANGE_RATE_KEY);
+                return saved ? parseInt(saved, 10) : DEFAULT_EXCHANGE_RATE;
+            }
+
+            function saveExchangeRateToStorage(rate) {
+                localStorage.setItem(EXCHANGE_RATE_KEY, rate.toString());
+            }
+
             function isAdminLoggedIn() {
                 return localStorage.getItem(ADMIN_KEY) === 'true';
             }
 
-            // ==================== TOAST ====================
             function showToast(message, type = 'success') {
                 const container = document.getElementById('toastContainer');
                 const toast = document.createElement('div');
@@ -1390,14 +1383,21 @@
                 }, 3000);
             }
 
-            // ==================== RENDER PRODUCTS ====================
             function formatPrice(price) {
                 return Number(price).toLocaleString('ar-IQ');
+            }
+
+            function computeUsdPrice(iqdPrice) {
+                const rate = getExchangeRate();
+                if (!rate || rate <= 0) return null;
+                const usdValue = (iqdPrice * 100) / rate;
+                return usdValue.toFixed(2);
             }
 
             function renderProducts(filter = 'all') {
                 const grid = document.getElementById('productsGrid');
                 const products = getProducts();
+                const rate = getExchangeRate();
 
                 if (products.length === 0) {
                     grid.innerHTML = `
@@ -1411,8 +1411,7 @@
                 let filtered = products;
                 if (filter !== 'all') {
                     const filterNum = parseInt(filter);
-                    filtered = products.filter(p => p.installmentOptions && p.installmentOptions.includes(
-                        filterNum));
+                    filtered = products.filter(p => p.installmentOptions && p.installmentOptions.includes(filterNum));
                 }
 
                 if (filtered.length === 0) {
@@ -1433,6 +1432,8 @@
                         `<span class="installment-pill">📅 ${m} أشهر</span>`
                     ).join('');
                     const originalIndex = products.indexOf(p);
+                    const usdPrice = computeUsdPrice(p.price);
+                    const usdDisplay = usdPrice ? `<div class="usd-equivalent">💵 ≈ ${usdPrice} دولار</div>` : '';
                     return `
                         <div class="product-card" onclick="openProductDetail(${originalIndex})" data-installments="${(p.installmentOptions||[]).join(',')}">
                             <div class="img-wrap">${imgHTML}</div>
@@ -1441,6 +1442,7 @@
                                 <div class="card-title">${escapeHTML(p.name)}</div>
                                 ${p.description ? `<div class="card-desc">${escapeHTML(p.description)}</div>` : ''}
                                 <div class="card-price">${formatPrice(p.price)} <span class="currency">د.ع</span></div>
+                                ${usdDisplay}
                                 <div class="installment-pills">${installmentPills}</div>
                                 <button class="card-btn" onclick="event.stopPropagation();openProductDetail(${originalIndex})">📋 عرض التفاصيل والتقسيط</button>
                             </div>
@@ -1454,12 +1456,12 @@
                 return div.innerHTML;
             }
 
-            // ==================== PRODUCT DETAIL MODAL ====================
             function openProductDetail(index) {
                 const products = getProducts();
                 if (index < 0 || index >= products.length) return;
                 const p = products[index];
                 const body = document.getElementById('productModalBody');
+                const usdPrice = computeUsdPrice(p.price);
 
                 let imagesHTML = '';
                 if (p.images && p.images.length > 0) {
@@ -1490,6 +1492,7 @@
                     <div class="detail-info">
                         <span class="label">💰 السعر الإجمالي</span>
                         <span class="value" style="font-size:1.5rem;font-weight:800;color:#0a1e3d;">${formatPrice(p.price)} د.ع</span>
+                        ${usdPrice ? `<span class="value" style="font-size:0.95rem;color:#666;">💵 ما يعادل تقريباً ${usdPrice} دولار أمريكي</span>` : ''}
                     </div>
                     ${p.description ? `
                     <div class="detail-info">
@@ -1507,11 +1510,9 @@
                     <button class="order-btn" id="orderBtn" data-product-name="${escapeHTML(p.name)}" data-product-price="${p.price}">📩 تقديم طلب الشراء بالتقسيط</button>
                 `;
 
-                // Add event listeners to installment options
                 document.querySelectorAll('#installmentOptionsContainer .installment-option').forEach(opt => {
                     opt.addEventListener('click', function() {
-                        document.querySelectorAll('#installmentOptionsContainer .installment-option')
-                            .forEach(o => o.classList.remove('selected'));
+                        document.querySelectorAll('#installmentOptionsContainer .installment-option').forEach(o => o.classList.remove('selected'));
                         this.classList.add('selected');
                         const months = this.getAttribute('data-months');
                         const monthly = this.getAttribute('data-monthly');
@@ -1522,7 +1523,6 @@
                     });
                 });
 
-                // Order button
                 document.getElementById('orderBtn').addEventListener('click', function() {
                     const months = this.getAttribute('data-months');
                     const productName = this.getAttribute('data-product-name');
@@ -1534,8 +1534,7 @@
                     const monthly = this.getAttribute('data-monthly');
                     const message =
                         `السلام عليكم، أرغب في طلب جهاز: *${productName}* بالسعر الإجمالي *${formatPrice(productPrice)} د.ع* على تقسيط *${months} شهر* بمبلغ شهري *${formatPrice(monthly)} د.ع* عبر مصرف الرافدين.`;
-                    const whatsappURL =
-                        `https://wa.me/9640000000000?text=${encodeURIComponent(message)}`;
+                    const whatsappURL = `https://wa.me/9640000000000?text=${encodeURIComponent(message)}`;
                     window.open(whatsappURL, '_blank', 'noopener');
                     closeProductModal();
                 });
@@ -1549,7 +1548,6 @@
                 document.body.style.overflow = '';
             }
 
-            // ==================== ADMIN LOGIN ====================
             function openAdminLogin() {
                 document.getElementById('adminLoginOverlay').classList.add('active');
                 document.getElementById('loginError').classList.remove('show');
@@ -1590,6 +1588,7 @@
                 document.getElementById('adminPanel').classList.add('active');
                 document.body.style.overflow = 'hidden';
                 resetAdminForm();
+                loadExchangeRateInput();
                 renderExistingProducts();
                 window.scrollTo(0, 0);
             }
@@ -1600,7 +1599,6 @@
                 renderProducts(getCurrentFilter());
             }
 
-            // ==================== ADMIN PRODUCT MANAGEMENT ====================
             let tempImages = [];
             let editingId = null;
 
@@ -1621,6 +1619,22 @@
             function cancelEdit() {
                 resetAdminForm();
                 showToast('تم إلغاء التعديل');
+            }
+
+            function loadExchangeRateInput() {
+                document.getElementById('exchangeRateInput').value = getExchangeRate();
+            }
+
+            function saveExchangeRate() {
+                const rateInput = document.getElementById('exchangeRateInput').value.trim();
+                const rate = parseInt(rateInput, 10);
+                if (isNaN(rate) || rate <= 0) {
+                    showToast('⚠️ الرجاء إدخال سعر صرف صحيح', 'error');
+                    return;
+                }
+                saveExchangeRateToStorage(rate);
+                showToast('✅ تم حفظ سعر الصرف بنجاح');
+                renderProducts(getCurrentFilter());
             }
 
             document.getElementById('imageInput').addEventListener('change', function(e) {
@@ -1650,7 +1664,6 @@
                     }
                     const reader = new FileReader();
                     reader.onload = function(ev) {
-                        // Compress image before storing
                         const img = new Image();
                         img.onload = function() {
                             const canvas = document.createElement('canvas');
@@ -1705,20 +1718,15 @@
                 const installmentOptions = Array.from(installmentChecks).map(cb => parseInt(cb.value));
                 const editingProductId = document.getElementById('editingProductId').value;
 
-                // Validation
                 if (!name) { showToast('⚠️ الرجاء إدخال اسم المنتج', 'error'); return; }
-                if (!priceStr || isNaN(priceStr) || Number(priceStr) <= 0) { showToast('⚠️ الرجاء إدخال سعر صحيح',
-                        'error'); return; }
-                if (installmentOptions.length === 0) { showToast('⚠️ الرجاء اختيار خيار تقسيط واحد على الأقل', 'error');
-                    return; }
-                if (tempImages.length === 0 && !editingProductId) { showToast('⚠️ الرجاء إضافة صورة واحدة على الأقل للمنتج',
-                        'error'); return; }
+                if (!priceStr || isNaN(priceStr) || Number(priceStr) <= 0) { showToast('⚠️ الرجاء إدخال سعر صحيح', 'error'); return; }
+                if (installmentOptions.length === 0) { showToast('⚠️ الرجاء اختيار خيار تقسيط واحد على الأقل', 'error'); return; }
+                if (tempImages.length === 0 && !editingProductId) { showToast('⚠️ الرجاء إضافة صورة واحدة على الأقل للمنتج', 'error'); return; }
 
                 const price = Math.round(Number(priceStr));
                 const products = getProducts();
 
                 if (editingProductId) {
-                    // Edit existing
                     const idx = products.findIndex(p => p.id === editingProductId);
                     if (idx >= 0) {
                         products[idx].name = name;
@@ -1738,7 +1746,6 @@
                         }
                     }
                 } else {
-                    // Add new
                     const newProduct = {
                         id: Date.now().toString(),
                         name,
@@ -1816,7 +1823,6 @@
                 }
             };
 
-            // ==================== FILTERS ====================
             let currentFilter = 'all';
 
             function getCurrentFilter() {
@@ -1825,15 +1831,13 @@
 
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
-                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove(
-                        'active'));
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                     this.classList.add('active');
                     currentFilter = this.getAttribute('data-filter');
                     renderProducts(currentFilter);
                 });
             });
 
-            // ==================== EVENT LISTENERS ====================
             document.getElementById('secretSmiley').addEventListener('click', function(e) {
                 e.preventDefault();
                 if (isAdminLoggedIn()) {
@@ -1850,12 +1854,10 @@
                 if (e.target === this) closeProductModal();
             });
 
-            // Enter key for login
             document.getElementById('adminPasswordInput').addEventListener('keydown', function(e) {
                 if (e.key === 'Enter') adminLogin();
             });
 
-            // Header scroll effect
             window.addEventListener('scroll', function() {
                 const header = document.getElementById('header');
                 if (window.scrollY > 50) {
@@ -1865,13 +1867,22 @@
                 }
             });
 
-            // ==================== INITIALIZATION ====================
             function scrollToTop() {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
             window.scrollToTop = scrollToTop;
 
-            // Add some demo products if the store is empty (first-time setup)
+            // Expose necessary functions for inline onclick handlers
+            window.adminLogin = adminLogin;
+            window.closeAdminLogin = closeAdminLogin;
+            window.openAdminPanel = openAdminPanel;
+            window.closeProductModal = closeProductModal;
+            window.openProductDetail = openProductDetail;
+            window.saveProduct = saveProduct;
+            window.cancelEdit = cancelEdit;
+            window.adminLogout = adminLogout;
+            window.saveExchangeRate = saveExchangeRate;
+
             function addDemoProductsIfEmpty() {
                 const products = getProducts();
                 if (products.length === 0) {
@@ -1940,17 +1951,13 @@
                 }
             }
 
-            // Initialize
             addDemoProductsIfEmpty();
             renderProducts(currentFilter);
 
-            // If admin was logged in before, they can click smiley to go directly to panel
             console.log('✅ منصة الرافدين للتقسيط جاهزة | مصرف الرافدين');
-            console.log('🔐 للوصول للوحة التحكم: اضغط على الوجه المبتسم 🙁 في أسفل الصفحة');
+            console.log('🔐 للوصول للوحة التحكم: اضغط على الوجه المبتسم 🙂 في أسفل الصفحة');
             console.log('👨‍💼 رمز الدخول: 14001400@AliQais');
-            console.log('💾 المنتجات مخزنة محلياً في متصفحك (localStorage)');
-            console.log('🖼️ الحد الأقصى للصور: 10 صور لكل منتج');
-            console.log('💰 جميع الأسعار بالدينار العراقي (د.ع)');
+            console.log('💱 يمكنك تعديل سعر الصرف (لكل 100 دولار) من لوحة التحكم');
         })();
     </script>
 </body>
